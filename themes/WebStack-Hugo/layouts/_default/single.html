@@ -1,0 +1,62 @@
+{{ partial "header.html" . }}
+
+{{ partial "content_header.html" . }}
+
+<body>
+    <main>
+        <div class="container">
+            <div class="row">
+
+                <!-- 文章内容 -->
+                <div class="col-md-9">
+                    <div class="card rounded shadow-sm mb-4">
+                        <div class="card-body">
+                            <h1 class="card-title text-center mt-3">{{ .Title }}</h1>
+
+                            <!-- 文章内容 -->
+                            <div class="content px-4">  <!-- 添加 px-4 类 -->
+                                {{ .Content | markdownify | safeHTML }}
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .content {
+            font-size: 1.25rem;
+        }
+
+        .content h1,
+        .content h2,
+        .content h3,
+        .content h4 {
+            margin: 15px 10px 5px;
+        }
+
+       /* 调整目录样式，使其更美观 */
+       #TableOfContents ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        #TableOfContents a {
+            display: block;
+            padding: 5px 0;
+            color: #333;
+            text-decoration: none;
+        }
+        #TableOfContents a:hover {
+            color: #007bff;
+        }
+        #TableOfContents li {
+            margin-bottom: 5px;
+        }
+    </style>
+    {{ partial "content_footer.html" . }}
+    {{ partial "modal_search.html" . }}
+    {{ partial "footer.html" . }}
+

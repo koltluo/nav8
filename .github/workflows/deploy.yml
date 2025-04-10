@@ -1,0 +1,44 @@
+name: Hugo Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # 当 main 分支有推送时触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: 检查代码
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    # Step 2: 设置 Hugo 环境
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'  # 使用 Hugo 的最新稳定版本
+
+    # Step 3: 安装 Node.js（如果你主题需要）
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # 替换为你实际需要的Node.js版本
+
+    # Step 4: 安装依赖 
+    # (适用于主题或 Hugo 额外依赖包，如 npm、yarn 安装)
+    - name: Install Dependencies
+      run: npm install
+
+    # Step 5: Build Hugo 页面生成内容
+    - name: Build Hugo
+      run: hugo --minify  # Hugo 生成静态文件到 public 目录
+
+    # Step 6: Deploy to GitHub Pages 分支
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public  # 指定 Hugo 生成的输出目录
+        publish_branch: gh-pages  # 推送到 GitHub 的 gh-pages 分支

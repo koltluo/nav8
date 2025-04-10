@@ -1,0 +1,175 @@
+<script type='text/javascript' src='{{ relURL "assets/js/jquery.ui.touch-punch.min-0.2.2.js" }}' id='jqueryui-touch-js' defer></script>
+<script type='text/javascript' src='{{ relURL "assets/js/clipboard.min-5.6.2.js" }}' id='clipboard-js' defer></script>
+<script type='text/javascript' src='{{ relURL "assets/js/tooltip-extend.js" }}' id='iplaycode-nav-js' defer></script>
+<script type='text/javascript' id='popper-js-extra'>
+/* <![CDATA[ */
+//var theme = {"ajaxurl":"https:\/\/nav.baidu.com\/wp-admin\/admin-ajax.php","addico":"https:\/\/nav.baidu.cn\/wp-content\/themes\/onenav\/images\/add.png","order":"asc","formpostion":"top","defaultclass":"io-grey-mode","isCustomize":"1","icourl":"https:\/\/api.badi.cn\/favicon\/","icopng":".png","urlformat":"1","customizemax":"10","newWindow":"0","lazyload":"1","minNav":"1","loading":"1","hotWords":"baidu","classColumns":" col-sm-6 col-md-4 col-xl-5a col-xxl-6a ","apikey":"TWpBeU1UVTNOekk1TWpVMEIvZ1M2bFVIQllUMmxsV1dZelkxQTVPVzB3UW04eldGQmxhM3BNWW14bVNtWk4="};
+var theme = {"order":"asc","formpostion":"top","defaultclass":"io-grey-mode","isCustomize":"1","icopng":".png","urlformat":"1","customizemax":"10","newWindow":"0","lazyload":"1","minNav":"1","loading":"1","hotWords":"baidu","classColumns":" col-sm-6 col-md-4 col-xl-5a col-xxl-6a "};
+/* ]]> */
+</script>
+<script type='text/javascript' src='{{ relURL "assets/js/popper.min.js" }}' id='popper-js' defer></script>
+<script type='text/javascript' src='{{ relURL "assets/js/bootstrap.min-4.3.1.js" }}' id='bootstrap-js' defer></script>
+<script type='text/javascript' src='{{ relURL "assets/js/theia-sticky-sidebar-1.5.0.js" }}' id='sidebar-js' defer></script>
+<script type='text/javascript' src='{{ relURL "assets/js/lazyload.min-12.4.0.js" }}' id='lazyload-js' defer></script>
+<script type='text/javascript' src='{{ relURL "assets/js/fancybox.min-3.5.7.js" }}' id='lightbox-js-js' defer></script>
+{{ if $.Site.Params.expandSidebar }}
+<script type='text/javascript' src='{{ relURL "assets/js/app-anim.js" }}' id='appanim-js' defer></script>
+{{ else }}
+<script type='text/javascript' src='{{ relURL "assets/js/app-mini.js" }}' id='appmini-js' defer></script>
+{{ end }}
+
+<script>
+    $(document).ready(function() {
+        // 页面加载欢迎动画
+        var siteWelcome = $('#loading');
+        siteWelcome.addClass('close');
+        setTimeout(function() {
+            siteWelcome.remove();
+        }, 600);
+
+        // 平滑滚动到锚点
+        setTimeout(function() {
+            var hash = window.location.hash;
+            if (hash) {
+                var target = $(hash);
+                if (target.length) {
+                    scrollToTarget(target);
+                }
+            }
+        }, 300);
+
+        // 平滑滚动点击事件
+        $(document).on('click', 'a.smooth', function(ev) {
+            var $this = $(this);
+
+            // 关闭侧边栏 (如果打开)
+            if ($('#sidebar').hasClass('show') && !$this.hasClass('change-href')) {
+                $('#sidebar').modal('toggle');
+            }
+
+            var href = $this.attr("href");
+
+            // 锚点链接
+            if (href && href.substr(0, 1) == "#") {
+                var target = $(href);
+                if (target.length) {
+                    scrollToTarget(target);
+                }
+            }
+
+            // 搜索按钮
+            if ($this.hasClass('go-search-btn')) {
+                $('#search-text').focus();
+            }
+
+            // tab 切换
+            if (!$this.hasClass('change-href')) {
+                var menu = $("a" + href);
+                menu.click();
+                toTarget(menu.parent().parent(), true, true);
+            }
+        });
+
+        // tab-noajax 点击事件
+        $(document).on('click', 'a.tab-noajax', function(ev) {
+            var url = $(this).data('link');
+            var moveBtn = $(this).parents('.d-flex.flex-fill.flex-tab').children('.btn-move.tab-move');
+
+            if (url) {
+                moveBtn.show().attr('href', url);
+            } else {
+                moveBtn.hide();
+            }
+        });
+
+        // 平滑滚动到目标位置
+        function scrollToTarget(target) {
+            $("html, body").animate({
+                scrollTop: target.offset().top - 90
+            }, {
+                duration: 500,
+                easing: "swing"
+            });
+        }
+    });
+</script>
+
+<script>
+// 夜间模式切换
+(function() {
+    var nightModeClass = 'night';
+    var darkModeClass = 'io-black-mode';
+    var lightModeClass = 'io-grey-mode';
+    var searchImageDark = "{{ $.Site.Params.images.searchImageD }}";
+    var searchImageLight = "{{ $.Site.Params.images.searchImageL }}";
+
+    // 获取 Cookie 值
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    // 设置 Cookie
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // 初始化夜间模式
+    function initNightMode() {
+        var night = getCookie('night');
+        var isNightMode = (night === '1');
+        toggleNightMode(isNightMode);
+    }
+
+    // 切换夜间模式
+    function toggleNightMode(isNightMode) {
+        var searchBg = $("#search-bg");
+        if (isNightMode) {
+            searchBg.css("background-image", "url(" + searchImageLight + ")");
+            document.body.classList.remove(lightModeClass);
+            document.body.classList.add(darkModeClass);
+            $(".switch-dark-mode").attr("data-original-title", "日间模式");
+            $(".mode-ico").removeClass("icon-night").addClass("icon-light");
+        } else {
+            searchBg.css("background-image", "url(" + searchImageDark + ")");
+            document.body.classList.remove(darkModeClass);
+            document.body.classList.add(lightModeClass);
+            $(".switch-dark-mode").attr("data-original-title", "夜间模式");
+            $(".mode-ico").removeClass("icon-light").addClass("icon-night");
+        }
+
+        // 设置 Cookie
+        setCookie('night', isNightMode ? '1' : '0', 365);
+    }
+
+    // 自动判断夜间模式
+    if (!getCookie('night')) {
+        var currentHour = new Date().getHours();
+        var isNight = (currentHour > 22 || currentHour < 6);
+        toggleNightMode(isNight);
+    } else {
+        initNightMode();
+    }
+
+    // 绑定切换事件
+    window.switchNightMode = function() {
+        var night = getCookie('night');
+        var isNightMode = (night !== '1');
+        toggleNightMode(isNightMode);
+    };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Hugo 生成的文件
+/public/
+/resources/_gen/
+
+# Node.js 依赖
+/node_modules/
+/cloudflare-worker/node_modules/
+
+# 环境变量文件
+.env

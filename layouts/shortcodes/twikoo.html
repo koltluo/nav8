@@ -1,0 +1,9 @@
+<div id="twikoo-comment"></div>
+<script src="https://cdn.staticfile.org/twikoo/1.6.30/twikoo.min.js"></script>
+<script>
+    twikoo.init({
+        envId: 'https://twikoo.nav8.top',
+        el: '#twikoo-comment',
+        url: '{{ $.Page.Permalink }}'  //  使用 $.Page.Permalink
+    });
+</script>

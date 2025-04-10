@@ -1,0 +1,61 @@
+{{ partial "head.html" . }}
+
+<body>
+  {{ partial "header1.html" . }}
+
+  <div class="container mt-5">
+      <div class="card-body">
+        <h1 class="card-title text-center">{{ .Title }}</h1>
+      </div>
+
+    {{ if .Content }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+    {{ end }}
+
+    <div class="row">
+      {{ range .Paginator.Pages }}
+      <div class="col-md-4 mb-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ .Date.Format "2006-01-02" }}</h6>
+            <p class="card-text">
+              {{ $plainSummary := .Summary | plainify }}
+              {{ $summaryLength := len $plainSummary }}
+              {{ if gt $summaryLength 0 }}
+                {{ $truncatedSummary := "" }}
+                {{ if le $summaryLength 200 }}
+                  {{ $truncatedSummary = $plainSummary }}
+                {{ else }}
+                  {{ $truncatedSummary = substr $plainSummary 0 200 }}
+                {{ end }}
+                {{ $truncatedSummary }}...
+              {{ end }}
+            </p>
+          </div>
+          <div class="card-footer d-flex justify-content-between align-items-center">
+            {{ if .Params.categories }}
+            <small class="text-muted">
+              Categories:
+              {{ range .Params.categories }}
+              <a href="/categories/{{ . | urlize }}/">{{ . }}</a>
+              {{ end }}
+            </small>
+            {{ end }}
+            <a href="{{ .Permalink }}" class="btn btn-primary">阅读更多</a>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+    {{ partial "pagination.html" . }}
+
+  </div>
+  {{ partial "content_footer.html" . }}
+  {{ partial "modal_search.html" . }}
+  {{ partial "footer.html" . }}
+
+</body>

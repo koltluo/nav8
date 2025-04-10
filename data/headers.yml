@@ -1,0 +1,28 @@
+- item: 首页
+  icon: fa fa-home
+  link: "/"
+
+- item: 赞助
+  icon: fa fa-search-dollar
+  qrcode: assets/images/微信收款码.jpg
+  link: "/zanzhu/"
+- item: 合作
+  icon: fa fa-business-time
+  link: ""
+  list:
+    - name: 广告合作
+      url: "mailto:admin@nav8.top"
+    - name: 友链申请
+      url: "/friends/"
+      
+- item: 博客
+  icon: fa fa-book
+  link: "/post/"
+  
+- item: 新闻
+  icon: fa fa-tags
+  link: "https://news.nav8.top"
+
+- item: 关于
+  icon: fa fa-info-circle
+  link: "/about/"

@@ -1,0 +1,74 @@
+baseURL               = "https://nav8.top"
+languageCode          = "zh-CN"
+title                 = "外贸驿站|外贸人自己的上网主页|外贸人士必备的工具网站"
+theme                 = "WebStack-Hugo"
+preserveTaxonomyNames = true
+disablePathToLower    = true
+hasCJKLanguage        = true
+publishDir            = "public"					# 站点静态文件保存目录
+
+
+[params]
+    author        = "外贸驿站"
+    description   = "外贸驿站，外贸人自己的上网主页，外贸人士必备的工具网站，做外贸，就上外贸驿站，为您提供外贸工具，外贸黄页，外贸翻译，外贸网址，外贸B2B平台，外贸知识，社交平台，论坛，收款工具，素材，HS编码，关税查询，背景调查等"
+    upload        = "/friends/"  # 左侧导航栏的"网站提交"
+    about         = "/about-us"	# 左侧导航栏的"关于导航"页面(./about)
+    repository    = "https://github.com/koltluo/nav"  
+    enablePreLoad = true					# 网站完全打开前预加载动画
+    textPreLoad   = "外贸人士必备的专业导航网站"				# 预加载的动画文字, 只有当enablePreLoad=true时生效
+    expandSidebar = true					# 默认展开左侧边导航栏
+    logosPath     = "assets/images/logos"			# 网站每个导航地址logo存放地址
+    defaultLogo   = "assets/images/logos/default.webp"		# logo图片资源不存在或者错误时, 默认显示的logo; 该参数如为空,将会一直加载对应的logo,直至成功
+    nightMode     = false					# 默认站点为深色(夜间)模式
+    yiyan         = true                         		# 默认启用一言服务
+	keywords      = '外贸之家,外贸导航,外贸工具,外贸黄页,外贸翻译,外贸网站'
+    contentTypeName = "post"  
+
+
+[params.seo]    
+    baiduhmid       = '2e56ee16762ebe2104a91d85b11878fb'	# 百度统计 hm.src 的 ID
+    baiduSiteVer    = 'codeva-ofAliP7sLP'			# 百度HTML标签验证(baidu-site-verification)
+    tj51laid        = '3H6dd5zdhTh53WWR'                        		# 51.LA 网站统计
+    tj51lack        = '3H6dd5zdhTh53WWR'
+    GoogleAdsClient = 'ca-pub-4470609607748010'					# Google AdSense 
+
+[params.qweather]
+    key = "085791e805a24491b43b06cf58ab31e7"
+
+[params.images]
+    favicon           = "assets/images/favicon.png"
+    searchImageL      = ""		# 搜索部分浅色背景图
+    searchImageD      = ""		# 搜索部分深色背景图
+    logoExpandLight   = "assets/images/logo-light.png"
+    logoExpandDark    = "assets/images/logo-dark.png"
+    logoCollapseLight = "assets/images/logo.png"
+    logoCollapseDark  = "assets/images/logo.png"
+	
+
+
+paginatePath = "page"  # 分页的路径
+paginate = 6          # 每页显示的条目数
+  
+	
+	
+    
+[markup.goldmark.renderer]
+    unsafe = true
+
+[params.footer]
+    copyright = '<b>声明：网站上的服务均为第三方提供，与本站无关。请用户注意甄别服务质量，避免上当受骗。</b><br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：admin@nav8.top <br/>&copy; 2021 - {year} By <a href="/">外贸驿站</a>  版权所有，未经授权禁止复制或建立镜像！  <a href="/comment/" target="_blank">吐槽建议</a> | <a href="mailto:admin@nav8.top" target="_blank">推广合作</a> | <a href="/friends/" target="_blank">友链申请</a> | <a href="/privacy/" target="_blank">隐私政策</a><br/>'
+
+[imaging]
+  lazyLoading = true
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2  # 从 h2 开始生成目录
+    endLevel = 4    # 到 h4 结束
+ [markup.highlight]
+    style = "github"  # 主题风格
+    lineNos = true    # 显示行号
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"

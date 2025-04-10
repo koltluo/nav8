@@ -1,0 +1,125 @@
+{{ partial "head.html" . }}
+
+
+<body>
+
+    {{ partial "header1.html" . }}
+    <main>
+        <div class="container">
+
+            
+            <div class="row">
+
+<!-- 文章目录和最新文章 -->
+<div class="col-md-3">
+    <div class="sticky-top" style="top: 20px;">
+        <!-- 文章目录卡片 -->
+        <div class="card rounded shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="card-title">文章目录</h5>
+                <nav id="TableOfContents">
+                    {{ .TableOfContents }}
+                </nav>
+            </div>
+        </div>
+
+        <!-- 最新文章卡片 -->
+        <div class="card rounded shadow-sm mb-4">
+            <div class="card-body">
+                <h5 class="card-title">最新文章</h5>
+                <ul class="list-group list-group-flush">
+                    {{ $posts := where .Site.Pages "Section" "post" |  first 10 }}  <!-- 过滤出 /post/ 目录下的前10篇文章 -->
+                    {{ range $posts }}
+                    <li class="list-group-item">
+                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+                <!-- 文章内容 -->
+                <div class="col-md-9">
+                    <div class="card rounded shadow-sm mb-4">
+                        <div class="card-body">
+                            <h1 class="card-title text-center mt-3">{{ .Title }}</h1>
+
+                            <!-- 文章元数据 -->
+                            <div class="text-muted text-center mb-3">
+                                <i class="far fa-calendar-alt"></i>
+                                发表于 {{ .Date.Format "2006-01-02" }} &nbsp;
+                                <i class="far fa-folder"></i>
+                                分类：
+                                {{ with .Params.categories }}
+                                    {{ range . }}
+                                        <a href="/categories/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+                                    {{ end }}
+                                {{ else }}
+                                    暂无分类
+                                {{ end }}
+                                <i class="fas fa-tags"></i>
+                                标签：
+                                {{ with .Params.tags }}
+                                    {{ range . }}
+                                        <a href="/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+                                    {{ end }}
+                                {{ else }}
+                                    暂无标签
+                                {{ end }}
+                                <i class="far fa-clock"></i>
+                                阅读时长：{{ .ReadingTime }} 分钟
+                            </div>
+                            
+                            <!-- 文章内容 -->
+                            <div class="content px-4">  <!-- 添加 px-4 类 -->
+                                {{ .Content | markdownify | safeHTML }}
+                            </div>
+
+                            <!-- 转载声明 -->
+                            <div class="alert alert-info mt-4" role="alert">
+                                转载请注明出处：<a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </div>
+
+<!-- 社交分享 -->
+<div class="mt-4">
+    <h6>分享到：</h6>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}'); return false;"><i
+            class="fab fa-twitter"></i> Twitter</a>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}'); return false;"><i
+            class="fab fa-facebook"></i> Facebook</a>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}&summary={{ .Summary }}&source={{ .Site.Title }}'); return false;"><i
+            class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://pinterest.com/pin/create/button/?url={{ .Permalink }}&media={{ .Params.image }}&description={{ .Title }}'); return false;"><i
+            class="fab fa-pinterest"></i> Pinterest</a>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://wa.me/?text={{ .Title }}%20{{ .Permalink }}'); return false;"><i
+            class="fab fa-whatsapp"></i> WhatsApp</a>
+        <!-- 国内社交分享 -->
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://service.weibo.com/share/share.php?url={{ .Permalink }}&title={{ .Title }}&pic={{ .Params.image }}'); return false;"><i
+            class="fab fa-weibo"></i> 微博</a>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url={{ .Permalink }}&title={{ .Title }}&pics={{ .Params.image }}&summary={{ .Summary }}'); return false;"><i
+            class="fab fa-qq"></i> QQ空间</a>
+    <a href="#" class="btn btn-sm btn-outline-primary"
+        onclick="window.open('https://wx.qq.com/cgi-bin/mmwebwx-bin/webwxauth.html?url={{ .Permalink }}&title={{ .Title }}&summary={{ .Summary }}'); return false;"><i
+            class="fab fa-weixin"></i> 微信</a>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    {{ partial "content_footer.html" . }}
+    {{ partial "modal_search.html" . }}
+    {{ partial "footer.html" . }}
+
+</body>

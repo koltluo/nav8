@@ -1,0 +1,49 @@
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header1.html" . }}
+    <main>
+        <div class="container">
+            <div class="row justify-content-center"> <!-- 基于Bootstrap的网格系统 -->
+
+                <!-- 文章内容 -->
+                <div class="col-md-9"> <!-- 修改为 Bootstrap 栅格布局 -->
+                    <div class="card rounded shadow-sm mb-4">
+                        <div class="card-body">
+                            <h1 class="card-title text-center mt-3">{{ .Title }}</h1>
+
+                            <!-- 文章内容 -->
+                            <div class="content px-4">
+                                {{ .Content | markdownify | safeHTML }}
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 评论区
+                    <div class="card rounded shadow-sm mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">评论</h2>
+                            <div id="tcomment"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.30/dist/twikoo.all.min.js"></script>
+                <script>
+                  twikoo.init({
+                    envId: 'https://twikoo.nav8.top', // 替换为你的 Twikoo 环境 ID
+                    el: '#tcomment',
+                    path: '{{ .Permalink }}', // 使用页面的 Permalink 作为评论路径
+                  });
+                </script>
+                 -->
+            </div>
+        </div>
+    </main>
+
+    {{ partial "content_footer.html" . }}
+    {{ partial "modal_search.html" . }}
+    {{ partial "foot.html" . }}
+
+</body>

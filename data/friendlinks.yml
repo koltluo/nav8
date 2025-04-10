@@ -1,0 +1,39 @@
+- title: "Google"
+  url: "https://google.com"
+  avatar: "https://favicon.im/google.com"
+  desc: "全球搜索引擎"
+  category: "工具"
+  tags: ["搜索", "技术"]
+  
+- title: "GitHub"
+  url: "https://github.com"
+  avatar: "https://favicon.im/github.com"
+  desc: "代码托管平台"
+  category: "开发"
+  tags: ["Git", "开源"]
+- title: "Google"
+  url: "https://google.com"
+  avatar: "https://favicon.im/google.com"
+  desc: "全球搜索引擎"
+  category: "工具"
+  tags: ["搜索", "技术"]
+  
+- title: "GitHub"
+  url: "https://github.com"
+  avatar: "https://favicon.im/github.com"
+  desc: "代码托管平台"
+  category: "开发"
+  tags: ["Git", "开源"]
+- title: "Google"
+  url: "https://google.com"
+  avatar: "https://favicon.im/google.com"
+  desc: "全球搜索引擎"
+  category: "工具"
+  tags: ["搜索", "技术"]
+  
+- title: "GitHub"
+  url: "https://github.com"
+  avatar: "https://favicon.im/github.com"
+  desc: "代码托管平台"
+  category: "开发"
+  tags: ["Git", "开源"]

@@ -1,0 +1,37 @@
+{{ partial "head.html" . }}
+
+<body>
+
+    {{ partial "header1.html" . }}
+    <main>
+        <div class="container">
+            <div class="row justify-content-center">  <!-- 添加 justify-content-center 类 -->
+
+                <!-- 文章内容 -->
+                <div class="col-md-9">  <!-- 将 col-md-9 改为 col-md-8，适当减小宽度 -->
+                    <div class="card rounded shadow-sm mb-4">
+                        <div class="card-body">
+                            <h1 class="card-title text-center mt-3">分类</h1>
+
+                            <!-- 文章内容 -->
+                            <div class="content px-4">  <!-- 添加 px-4 类 -->
+                                <ul>  
+                                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}    
+                                    <li>
+                                        <a href="{{ $taxonomy.Page.Permalink }}">{{ $name }} ({{ len $taxonomy.Pages }})</a>
+                                    </li> 
+                                     {{ end }}
+                                    </ul>                                  
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    {{ partial "content_footer.html" . }}
+    {{ partial "modal_search.html" . }}
+    {{ partial "foot.html" . }}
