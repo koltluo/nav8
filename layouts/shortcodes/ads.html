@@ -1,0 +1,37 @@
+{{- $adType := .Get "type" | default "banner" -}}
+{{- $adSlot := .Get "slot" | default "" -}}
+{{- $adClient := .Get "client" | default "" -}}
+{{- $adWidth := .Get "width" | default "auto" -}}
+{{- $adHeight := .Get "height" | default "auto" -}}
+{{- $adClass := .Get "class" | default "ad-container" -}}
+
+{{ if eq $adType "banner" }}
+  <!-- Google AdSense Banner -->
+  <div class="{{ $adClass }}" style="width: {{ $adWidth }}; height: {{ $adHeight }}; margin: 1rem 0; text-align: center;">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $adClient }}" crossorigin="anonymous"></script>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="{{ $adClient }}"
+         data-ad-slot="{{ $adSlot }}"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+{{ else if eq $adType "amazon" }}
+  <!-- Amazon Affiliate -->
+  <div class="{{ $adClass }}" style="width: {{ $adWidth }}; height: {{ $adHeight }}; margin: 1rem 0; text-align: center;">
+    <iframe src="https://rcm-eu.amazon-adsystem.com/e/cm?o=2&p=48&l=ur1&category={{ .Get "category" }}&banner={{ .Get "banner_id" }}&f=ifr&linkID={{ .Get "link_id" }}&t={{ .Get "tracking_id" }}&width={{ $adWidth }}&height={{ $adHeight }}" width="{{ $adWidth }}" height="{{ $adHeight }}" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+  </div>
+
+{{ else if eq $adType "custom" }}
+  <!-- 自定义广告代码 -->
+  <div class="{{ $adClass }}" style="width: {{ $adWidth }}; height: {{ $adHeight }}; margin: 1rem 0; text-align: center;">
+    {{ .Inner | safeHTML }}
+  </div>
+
+{{ else }}
+  {{ errorf "广告类型 '%s' 不支持，请使用 'banner', 'amazon' 或 'custom'" $adType }}
+{{ end }}

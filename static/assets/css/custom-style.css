@@ -109,8 +109,96 @@ footer.main-footer .footer-text a:hover {
     background-color: #d8d8d8;
 }
 
+/* 确保所有图片自适应 */
+.content img {
+    max-width: 100%;  /* 图片最大宽度不超过容器 */
+    height: auto;     /* 高度自动调整，保持比例 */
+    display: block;   /* 避免行内元素导致的底部间隙 */
+    margin: 1rem auto; /* 上下边距 1rem，水平居中 */
+    border-radius: 4px; /* 可选：圆角 */
+  }
+  
+  .img-caption { margin: 1em 0; }
+  .img-caption-text { font-size: 0.9em; }  
+
+/*广告联盟*/
+.ad-container {
+    margin: 1rem 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+/*首页搜索框下面热词*/
+  .search-smart-tips .search-hot-text ul#word {
+    list-style: none; /*  去掉列表符号  */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-smart-tips .search-hot-text ul#word li {
+    display: inline-block;  /* 让热词排成一行 */
+    margin: 0 10px 5px 0;  /* 调整热词间的间距 */
+  }
+  
+  .search-smart-tips .search-hot-text ul#word li a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #f0f0f0;  /*  背景色  */
+    color: #333;
+    text-decoration: none;  /*  去掉下划线  */
+    border-radius: 3px;
+  }
+  
+  .search-smart-tips .search-hot-text ul#word li a:hover {
+    background-color: #ddd; /*  鼠标悬停时的颜色  */
+  }
+  
+/* 移除列表符号，左对齐文本，缩进 */
+#TableOfContents {
+    list-style: none; /* 移除列表符号 */
+    padding-left: 0; /* 移除左侧的内边距，确保完全左对齐 */
+}
+
+#TableOfContents > ul,
+#TableOfContents > ol {
+    list-style: none;
+    padding-left: 0; /* 确保第一层级不缩进 */
+}
+
+#TableOfContents ul,
+#TableOfContents ol {
+    list-style: none;
+    padding-left: 8px; /* 子列表缩进，根据需要调整 */
+}
+
+#TableOfContents li {
+    text-align: left; /*  左对齐文本  */
+    margin-bottom: 5px; /* 目录项之间的间距，根据需要调整 */
+}
 
 
+#TableOfContents a {
+    text-decoration: none; /* 移除下划线，根据需要 */
+    color: inherit; /* 继承颜色 */
+}
+
+  
+  /* 在移动端调整广告大小 */
+  @media (max-width: 768px) {
+    .ad-container {
+      width: 100% !important;
+      height: auto !important;
+    }
+
+    .content img {
+        margin: 0.5rem auto; /* 在小屏幕上减少边距 */
+      }
+  
+  }
+  
 
 
 

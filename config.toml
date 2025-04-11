@@ -52,8 +52,6 @@ paginate = 6          # 每页显示的条目数
 	
 	
     
-[markup.goldmark.renderer]
-    unsafe = true
 
 [params.footer]
     copyright = '<b>声明：网站上的服务均为第三方提供，与本站无关。请用户注意甄别服务质量，避免上当受骗。</b><br/>本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：info@nav8.top <br/>&copy; 2021 - {year} By <a href="/">外贸驿站</a>  版权所有，未经授权禁止复制或建立镜像！  <a href="/comment/" target="_blank">吐槽建议</a> | <a href="mailto:info@nav8.top" target="_blank">推广合作</a> | <a href="/friends/" target="_blank">友链申请</a> | <a href="/privacy/" target="_blank">隐私政策</a><br/>'
@@ -68,7 +66,15 @@ paginate = 6          # 每页显示的条目数
  [markup.highlight]
     style = "github"  # 主题风格
     lineNos = true    # 显示行号
+ [markup.goldmark]
+    [markup.goldmark.renderer]
+    unsafe = true  # 允许 HTML 标签渲染
+  defaultMarkdownHandler = "goldmark"  # 确保是 goldmark
+
 
 [taxonomies]
   category = "categories"
   tag = "tags"
+
+
+

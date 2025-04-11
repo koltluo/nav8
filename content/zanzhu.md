@@ -16,7 +16,7 @@ draft: false
 
 ### **❤️ 赞助方式：**
 
-  ![打赏鼓励一下](/assets/images/收款二维码.png)
+![打赏鼓励一下](/assets/images/收款二维码.png "打赏鼓励一下" )
 
 ---
 

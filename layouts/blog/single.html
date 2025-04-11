@@ -28,11 +28,13 @@
             <div class="card-body">
                 <h5 class="card-title">最新文章</h5>
                 <ul class="list-group list-group-flush">
-                    {{ $posts := where .Site.Pages "Section" "post" |  first 10 }}  <!-- 过滤出 /post/ 目录下的前10篇文章 -->
+                    {{ $posts := where .Site.Pages "Section" "post" | first 10 }}
                     {{ range $posts }}
-                    <li class="list-group-item">
-                        <a href="{{ .Permalink }}">{{ .Title }}</a>
-                    </li>
+                        {{ if .IsPage }}
+                            <li class="list-group-item">
+                                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            </li>
+                        {{ end }}
                     {{ end }}
                 </ul>
             </div>
@@ -76,10 +78,24 @@
                                 {{ .Content | markdownify | safeHTML }}
                             </div>
 
-                            <!-- 转载声明 -->
-                            <div class="alert alert-info mt-4" role="alert">
-                                转载请注明出处：<a href="{{ .Permalink }}">{{ .Title }}</a>
-                            </div>
+                <!-- 转载声明 -->
+                <div class="alert alert-info mt-4" role="alert">
+                    转载请注明出处：<a href="{{ .Permalink }}">{{ .Title }}</a>
+                </div>
+
+                <!-- 上一篇/下一篇文章 -->
+                <div class="row mt-4">
+                    <div class="col-6">
+                        {{ if .Prev }}
+                            <a href="{{ .Prev.Permalink }}" class="btn btn-outline-secondary btn-block">&laquo; 上一篇: {{ .Prev.Title }}</a>
+                        {{ end }}
+                    </div>
+                    <div class="col-6 text-right">
+                        {{ if .Next }}
+                            <a href="{{ .Next.Permalink }}" class="btn btn-outline-secondary btn-block">下一篇: {{ .Next.Title }} &raquo;</a>
+                        {{ end }}
+                    </div>
+                </div>
 
 <!-- 社交分享 -->
 <div class="mt-4">
