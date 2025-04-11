@@ -1,6 +1,6 @@
 baseURL               = "https://nav8.top"
 languageCode          = "zh-CN"
-title                 = "外贸驿站|外贸人自己的上网主页|外贸人士必备的工具网站"
+title                 = "外贸驿站|外贸资源全汇聚，成长路上好帮手|外贸人士必备的专业导航网站"
 theme                 = "WebStack-Hugo"
 preserveTaxonomyNames = true
 disablePathToLower    = true
@@ -10,7 +10,7 @@ publishDir            = "public"					# 站点静态文件保存目录
 
 [params]
     author        = "外贸驿站"
-    description   = "外贸驿站，外贸人自己的上网主页，外贸人士必备的工具网站，做外贸，就上外贸驿站，为您提供外贸工具，外贸黄页，外贸翻译，外贸网址，外贸B2B平台，外贸知识，社交平台，论坛，收款工具，素材，HS编码，关税查询，背景调查等"
+    description   = "外贸驿站，外贸人自己的上网主页，外贸资源全汇聚，成长路上好帮手,外贸人士必备的工具网站，做外贸，就上外贸驿站，为您提供外贸工具，外贸黄页，外贸翻译，外贸网址，外贸B2B平台，外贸知识，社交平台，论坛，收款工具，素材，HS编码，关税查询，背景调查等"
     upload        = "/friends/"  # 左侧导航栏的"网站提交"
     about         = "/about/"	# 左侧导航栏的"关于导航"页面(./about)
     repository    = "https://github.com/koltluo/nav"  
@@ -47,7 +47,7 @@ publishDir            = "public"					# 站点静态文件保存目录
 
 
 paginatePath = "page"  # 分页的路径
-paginate = 6          # 每页显示的条目数
+paginate = 9          # 每页显示的条目数
   
 	
 	
