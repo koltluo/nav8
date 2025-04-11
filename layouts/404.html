@@ -1,9 +1,10 @@
-{{ partial "header.html" . }}
+{{ partial "head.html" . }}
 
-{{ partial "content_header.html" . }}
 
 <body class="page-body boxed-container">
-    <main role="main" class="flex-shrink-0">
+  {{ partial "sidebar.html" . }}
+  {{ partial "header1.html" . }}
+  <main role="main" class="flex-shrink-0">
 <div style='font-family:system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji"; height:100vh; text-align:center; display:flex; flex-direction:column; align-items:center; justify-content:center'>
   <div>
     <style>

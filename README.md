@@ -1,7 +1,7 @@
 # My Hugo Site
 🚀 A static website built with  and deployed automatically to **GitHub Pages** using **GitHub Actions**.
 ## 🔗 Live Demo
-- **Website URL:** [https://your-username.github.io/my-hugo-site/](https://your-username.github.io/my-hugo-site/)
+- **Website URL:** [https://koltluo.github.io/nav8/](https://koltluo.github.io/nav8/)
 *(Replace with your actual GitHub Pages URL)*
 ## 🛠️ Features
 - **Hugo Static Site Generator** – Fast, flexible, and easy to use.
@@ -17,7 +17,7 @@
 ### Local Development
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/my-hugo-site.git
+   git clone https://github.com/koltluo/nav8.git
    cd my-hugo-site
    ```
 2. **Run Hugo locally:**

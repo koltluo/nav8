@@ -64,6 +64,57 @@
       logo: https://favicon.im/www.paypal.com
       url: https://www.paypal.com
       description: 全球最受欢迎的收款和付款方式，跨国交易即时支付即时到账，安全又方便，75%的跨国卖家首选PayPal作为付款方式。
+- taxonomy: AI工具
+  icon: fas fa-eye
+  links:
+        - title: Amazon CodeWhisperer
+          logo: "https://favicon.im/www.amazon.com"
+          url: https://aws.amazon.com/codewhisperer/
+          description: Amazon推出的AI编程助手，支持自动补全代码
+        - title: eBay AI Listing Tool
+          logo: "https://favicon.im/www.ebay.com"
+          url: https://www.ebay.com/sellerhub
+          description: eBay的商品自动优化和定价工具
+        - title: ChatGPT
+          logo: "https://favicon.im/www.openai.com"
+          url: https://chat.openai.com/
+          description: OpenAI的对话式AI，支持文案生成、翻译等
+        - title: Jasper
+          logo: "https://favicon.im/www.jasper.ai"
+          url: https://www.jasper.ai/ 
+          description: 专业营销文案生成工具
+        - title: Copy.ai
+          logo: "https://favicon.im/www.copy.ai"
+          url: https://www.copy.ai/
+          description: 社交媒体和广告文案生成
+        - title: MidJourney
+          logo: "https://favicon.im/www.midjourney.com"
+          url: https://www.midjourney.com/
+          description: AI绘画工具，生成艺术级图像
+        - title: Canva AI
+          logo: "https://favicon.im/www.canva.com"
+          url: https://www.canva.com/ai-tools/
+          description: 一键生成设计模板和图片
+        - title: Remove.bg
+          logo: "https://favicon.im/www.remove.bg"
+          url: https://www.remove.bg/
+          description: AI自动抠图工具
+        - title: GitHub Copilot
+          logo: "https://favicon.im/www.github.com"
+          url: https://github.com/features/copilot
+          description: GitHub推出的AI编程助手
+        - title: Tabnine
+          logo: "https://favicon.im/www.tabnine.com"
+          url: https://www.tabnine.com/
+          description: 全语言AI代码补全工具
+        - title: Synthesia
+          logo: "https://favicon.im/www.synthesia.io"
+          url: https://www.synthesia.io/
+          description: AI数字人视频生成
+        - title: Descript
+          logo: "https://favicon.im/www.descript.com"
+          url: https://www.descript.com/
+          description: AI音频编辑和文字转语音
 - taxonomy: 跨境电商
   icon: fa fa-store
   links: 
@@ -1739,240 +1790,245 @@
     - term: 网盘资源
       links:
         - title: 百度网盘
-          logo: 百度网盘.jpg
+          logo: "https://favicon.im/pan.baidu.com"
           url: http://pan.baidu.com/
-          description: https://pan.baidu.com/.
+          description: https://pan.baidu.com/
         - title: 阿里云盘
-          logo: 阿里云盘.png
+          logo: "https://favicon.im/www.aliyundrive.com"
           url: https://www.aliyundrive.com/
           description: 阿里云盘，你的数字世界。
         - title: 天翼云盘
-          logo: 天翼云盘.jpg
+          logo: "https://favicon.im/cloud.189.cn"
           url: https://cloud.189.cn/
           description: 家庭云|网盘|文件备份|资源分享。
         - title: 坚果云
-          logo: 坚果云.png
-          usrl: https://www.jianguoyun.com/
+          logo: "https://favicon.im/www.jianguoyun.com"
+          url: https://www.jianguoyun.com/
           description: 坚果云官网。
         - title: 谷歌云盘
-          logo: https://favicon.im/drive.google.com
-          usrl: https://drive.google.com/
+          logo: "https://favicon.im/drive.google.com"
+          url: https://drive.google.com/
           description: 谷歌云盘。  
         - title: 蓝奏云
-          logo: https://favicon.im/woozooo.com
-          usrl: https://up.woozooo.com/
+          logo: "https://favicon.im/up.woozooo.com"
+          url: https://up.woozooo.com/
           description: 蓝奏云    
+
     - term: 图标素材
       links:
         - title: Iconfinder
-          logo: Iconfinder.png
+          logo: "https://favicon.im/www.iconfinder.com"
           url: https://www.iconfinder.com
           description: 2,100,000+ free and premium vector icons.
         - title: iconfont
-          logo: iconfont.png
+          logo: "https://favicon.im/www.iconfont.cn"
           url: http://www.iconfont.cn/
           description: 阿里巴巴矢量图标库。
         - title: iconmonstr
-          logo: iconmonstr.png
+          logo: "https://favicon.im/iconmonstr.com"
           url: https://iconmonstr.com/
           description: Free simple icons for your next project.
         - title: Icon Archive
-          logo: iconarchive.png
+          logo: "https://favicon.im/www.iconarchive.com"
           url: http://www.iconarchive.com/
           description: Search 590,912 free icons.
         - title: FindIcons
-          logo: FindIcons.png
+          logo: "https://favicon.im/findicons.com"
           url: https://findicons.com/
           description: Search through 300,000 free icons.
         - title: IcoMoonApp
-          logo: IcoMoonApp.png
+          logo: "https://favicon.im/icomoon.io"
           url: https://icomoon.io/app/
           description: Icon Font, SVG, PDF &amp; PNG Generator.
         - title: easyicon
-          logo: easyicon.png
+          logo: "https://favicon.im/www.easyicon.net"
           url: http://www.easyicon.net/
           description: PNG、ICO、ICNS格式图标搜索、图标下载服务。
         - title: flaticon
-          logo: flaticon.png
+          logo: "https://favicon.im/www.flaticon.com"
           url: https://www.flaticon.com/
           description: 634,000+ Free vector icons in SVG, PSD, PNG, EPS format or as ICON FONT.
         - title: UICloud
-          logo: UICloud.png
+          logo: "https://favicon.im/ui-cloud.com"
           url: http://ui-cloud.com/
           description: The largest user interface design database in the world.
         - title: Material icons
-          logo: Materialicons.png
+          logo: "https://favicon.im/material.io"
           url: https://material.io/icons/
-          description: Access over 900 material system icons, available in a variety of sizes and densities, and as a web font.
+          description: Access over 900 material system icons.
         - title: Font Awesome Icon
-          logo: fontawesomeicon.png
+          logo: "https://favicon.im/fontawesome.com"
           url: https://fontawesome.com/icons/
           description: The complete set of 675 icons in Font Awesome.
         - title: ion icons
-          logo: ionicons.png
+          logo: "https://favicon.im/ionicons.com"
           url: http://ionicons.com/
           description: The premium icon font for Ionic Framework.
         - title: Simpleline Icons
-          logo: simplelineicons.png
+          logo: "https://favicon.im/simplelineicons.com"
           url: http://simplelineicons.com/
           description: Simple line Icons pack.
+
     - term: 图标设计
       links:
         - title: Iconsfeed
-          logo: iconsfeed.png
+          logo: "https://favicon.im/www.iconsfeed.com"
           url: http://www.iconsfeed.com/
           description: iOS icons gallery.
         - title: iOS Icon Gallery
-          logo: iosicongallery.png
+          logo: "https://favicon.im/iosicongallery.com"
           url: http://iosicongallery.com/
           description: Showcasing beautiful icon designs from the iOS App Store.
         - title: World Vector Logo
-          logo: worldvectorlogo.png
+          logo: "https://favicon.im/worldvectorlogo.com"
           url: https://worldvectorlogo.com/
           description: Brand logos free to download.
         - title: Instant Logo Search
-          logo: InstantLogoSearch.png
+          logo: "https://favicon.im/instantlogosearch.com"
           url: http://instantlogosearch.com/
           description: Search & download thousands of logos instantly.
+
     - term: 平面素材
       links:
         - title: freepik
-          logo: freepik.png
+          logo: "https://favicon.im/www.freepik.com"
           url: https://www.freepik.com/
           description: More than a million free vectors, PSD, photos and free icons.
         - title: wallhalla
-          logo: wallhalla.png
+          logo: "https://favicon.im/wallhalla.com"
           url: https://wallhalla.com/
-          description: Find awesome high quality wallpapers for desktop and mobile in one place.
+          description: Find awesome high quality wallpapers.
         - title: 365PSD
-          logo: 365PSD.png
+          logo: "https://favicon.im/365psd.com"
           url: https://365psd.com/
           description: Free PSD &amp; Graphics, Illustrations.
         - title: Medialoot
-          logo: Medialoot.png
+          logo: "https://favicon.im/medialoot.com"
           url: https://medialoot.com/
-          description: Free &amp; Premium Design Resources &mdash; Medialoot.
+          description: Free &amp; Premium Design Resources.
         - title: 千图网
-          logo: qiantu.png
+          logo: "https://favicon.im/www.58pic.com"
           url: http://www.58pic.com/
           description: 专注免费设计素材下载的网站.
         - title: 千库网
-          logo: qianku.png
+          logo: "https://favicon.im/588ku.com"
           url: http://588ku.com/
           description: 免费 png 图片背景素材下载。
         - title: 我图网
-          logo: wotu.png
+          logo: "https://favicon.im/www.ooopic.com"
           url: http://www.ooopic.com/
-          description: 我图网，提供图片素材及模板下载，专注正版设计作品交易。
+          description: 我图网，专注正版设计作品交易。
         - title: 90 设计
-          logo: 90sheji.png
+          logo: "https://favicon.im/90sheji.com"
           url: http://90sheji.com/
           description: 电商设计（淘宝美工）千图免费淘宝素材库。
         - title: 昵图网
-          logo: nipic.png
+          logo: "https://favicon.im/www.nipic.com"
           url: http://www.nipic.com/
           description: 原创素材共享平台。
         - title: 懒人图库
-          logo: lanrentuku.png
+          logo: "https://favicon.im/www.lanrentuku.com"
           url: http://www.lanrentuku.com/
           description: 懒人图库专注于提供网页素材下载。
         - title: 素材搜索
-          logo: sousucai.png
+          logo: "https://favicon.im/so.ui001.com"
           url: http://so.ui001.com/
           description: 设计素材搜索聚合。
         - title: PS 饭团网
-          logo: psefan.png
+          logo: "https://favicon.im/psefan.com"
           url: http://psefan.com/
-          description: 不一样的设计素材库！让自己的设计与众不同！
+          description: 不一样的设计素材库！
         - title: 素材中国
-          logo: sccnn.png
+          logo: "https://favicon.im/www.sccnn.com"
           url: http://www.sccnn.com/
           description: 免费素材共享平台。
+
     - term: 字体资源
       links:
         - title: Google Font
+          logo: "https://favicon.im/fonts.google.com"
           url: https://fonts.google.com/
-          logo: googlefont.png
-          description: Making the web more beautiful, fast, and open through great typography.
+          description: Making the web more beautiful through typography.
         - title: Typekit
+          logo: "https://favicon.im/typekit.com"
           url: https://typekit.com/
-          logo: typekit.png
           description: Quality fonts from the world’s best foundries.
         - title: 方正字库
+          logo: "https://favicon.im/www.foundertype.com"
           url: http://www.foundertype.com/
-          logo: Fondertype.png
           description: 方正字库官方网站。
         - title: 字体传奇网
+          logo: "https://favicon.im/ziticq.com"
           url: http://ziticq.com/
-          logo: ziticq.png
           description: 中国首个字体品牌设计师交流网。
         - title: 私藏字体
+          logo: "https://favicon.im/sicangziti.com"
           url: http://sicangziti.com/
-          logo: sicangziti.png
           description: 优质字体免费下载站。
         - title: Fontsquirrel
+          logo: "https://favicon.im/www.fontsquirrel.com"
           url: https://www.fontsquirrel.com/
-          logo: fontsquirrel.png
           description: FREE fonts for graphic designers.
         - title: Urban Fonts
+          logo: "https://favicon.im/www.urbanfonts.com"
           url: https://www.urbanfonts.com/
-          logo: UrbanFonts.png
           description: Download Free Fonts and Free Dingbats.
         - title: Lost Type
+          logo: "https://favicon.im/www.losttype.com"
           url: http://www.losttype.com/
-          logo: losttype.png
-          description: Lost Type is a Collaborative Digital Type Foundry.
+          description: Collaborative Digital Type Foundry.
         - title: FONTS2U
+          logo: "https://favicon.im/fonts2u.com"
           url: https://fonts2u.com/
-          logo: fonts2u.png
           description: Download free fonts for Windows and Macintosh.
         - title: Fontex
+          logo: "https://favicon.im/www.fontex.org"
           url: http://www.fontex.org/
-          logo: fontex.png
           description: Free Fonts to Download + Premium Typefaces.
         - title: FontM
+          logo: "https://favicon.im/fontm.com"
           url: http://fontm.com/
-          logo: FontM.png
           description: Free Fonts
         - title: My Fonts
+          logo: "https://favicon.im/www.myfonts.com"
           url: http://www.myfonts.com/
-          logo: MyFonts.png
           description: Fonts for Print, Products & Screens.
         - title: Da Font
+          logo: "https://favicon.im/www.dafont.com"
           url: https://www.dafont.com/
-          logo: dafont.png
           description: Archive of freely downloadable fonts.
         - title: OnlineWebFonts
+          logo: "https://favicon.im/www.onlinewebfonts.com"
           url: https://www.onlinewebfonts.com/
-          logo: OnlineWebFonts.png
-          description: WEB Free Fonts for Windows and Mac / Font free Download.
+          description: WEB Free Fonts for Windows and Mac.
         - title: Abstract Fonts
+          logo: "https://favicon.im/www.abstractfonts.com"
           url: http://www.abstractfonts.com/
-          logo: abstractfonts.png
           description: Abstract Fonts (13,866 free fonts).      
+
     - term: PPT资源
       links:
         - title: OfficePLUS
+          logo: "https://favicon.im/www.officeplus.cn"
           url: http://www.officeplus.cn/Template/Home.shtml
-          logo: officeplus.png
-          description: OfficePLUS，微软Office官方在线模板网站！
+          description: 微软Office官方在线模板网站！
         - title: 优品PPT
+          logo: "https://favicon.im/www.ypppt.com"
           url: http://www.ypppt.com/
-          logo: ypppt.png
-          description: 高质量的模版，而且还有PPT图表，PPT背景图等资源。
+          description: 高质量的模版，还有PPT图表等资源。
         - title: PPT+
+          logo: "https://favicon.im/www.pptplus.cn"
           url: http://www.pptplus.cn/
-          logo: pptplus.png
-          description: PPT加直播、录制和分享—PPT+语音内容分享平台。
+          description: PPT加直播、录制和分享平台。
         - title: PPTMind
+          logo: "https://favicon.im/www.pptmind.com"
           url: http://www.pptmind.com/
-          logo: pptmind.png
-          description: 分享高端 ppt 模板与 keynote 模板的数字作品交易平台。
+          description: 分享高端 ppt 模板与 keynote 模板。
         - title: tretars
+          logo: "https://favicon.im/www.tretars.com"
           url: http://www.tretars.com/ppt-templates
-          logo: tretars.png
           description: The best free Mockups from the Web.
         - title: 5百丁
+          logo: "https://favicon.im/ppt.500d.me"
           url: http://ppt.500d.me/
-          logo: 500d.png
           description: 中国领先的PPT模板共享平台。
