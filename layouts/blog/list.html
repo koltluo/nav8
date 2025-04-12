@@ -28,10 +28,10 @@
               {{ $summaryLength := len $plainSummary }}
               {{ if gt $summaryLength 0 }}
                 {{ $truncatedSummary := "" }}
-                {{ if le $summaryLength 200 }}
+                {{ if le $summaryLength 100 }}
                   {{ $truncatedSummary = $plainSummary }}
                 {{ else }}
-                  {{ $truncatedSummary = substr $plainSummary 0 200 }}
+                  {{ $truncatedSummary = substr $plainSummary 0 100 }}
                 {{ end }}
                 {{ $truncatedSummary }}...
               {{ end }}
