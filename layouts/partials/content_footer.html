@@ -8,13 +8,19 @@
                     rel="search" one-link-mark="yes" >
                     <i class="iconfont icon-search"></i>
                 </a>
+                <!-- 新增微信图标和二维码 -->
+<a href="javascript:void(0)" class="btn rounded-circle wechat-btn m-1" data-toggle="tooltip" data-placement="left" title="微信公众号">
+    <i class="mode-ico iconfont icon-wechat"></i>    <div class="wechat-qrcode">
+        <img src="/assets/images/qrcode.jpg" alt="微信公众号二维码">
+    </div>
+</a>
+
                 <a href="mailto:info@nav8.top" class="btn rounded-circle kefu m-1" target="_blank" data-toggle="tooltip" data-placement="left" title="联系我们">
                     <i class="fa fa-envelope"></i>
                 </a>
                 <a href="/comment/" class="btn rounded-circle kefu m-1" target="_blank" data-toggle="tooltip" data-placement="left" title="吐槽评论">
                     <i class="fa fa-comment"></i>
                 </a>
-
                 <!-- 右下角搜索 end -->
                 {{ if $.Site.Params.nightMode }} 
                 <a href="javascript:" onclick="window.location.href='javascript:switchNightMode()'" class="btn rounded-circle switch-dark-mode m-1" id="yejian"

@@ -12,17 +12,19 @@
                 <div class="col-md-9">  <!-- 将 col-md-9 改为 col-md-8，适当减小宽度 -->
                     <div class="card rounded shadow-sm mb-4">
                         <div class="card-body">
-                            <h1 class="card-title text-center mt-3">分类: {{ .Title }}</h1>  <!-- 显示标签名称 -->
+                            <h1 class="card-title text-center mt-3">分类</h1>  <!-- 显示标签名称 -->
 
-                            <!-- 文章内容 -->
-                            <div class="content px-4">  <!-- 添加 px-4 类 -->
-                                <ul>
-                                    {{ range .Pages }}  <!--  循环显示与此标签相关的文章  -->
-                                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                                    {{ end }}
-                                </ul>
-                             </div>
-                            
+<!-- 分类云展示区 -->
+<div class="tag-cloud mb-4 text-center">
+    {{ range .Site.Taxonomies.categories }}
+        <a href="{{ .Page.Permalink }}" 
+           class="category-{{ .Count }}"
+           style="font-size: {{ add 0.8 (mul 0.2 .Count) }}em;">
+            {{ .Page.Title }} ({{ .Count }})
+        </a>
+    {{ end }}
+</div>
+
                         </div>
                     </div>
                 </div>
