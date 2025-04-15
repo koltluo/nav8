@@ -289,7 +289,61 @@ footer.main-footer .footer-text a:hover {
   
   }
   
+/* 微信二维码样式 */
+.wechat-qrcode {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: 180px;
+    right: 50px; /* 改为从右侧定位 */
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
 
+/* 鼠标悬停显示二维码 */
+.wechat-btn:hover .wechat-qrcode {
+    opacity: 1;
+    visibility: visible;
+    bottom: 180px;
+}
+
+/* 标签云基础样式 */
+.tag-cloud {
+  line-height: 2;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  margin-bottom: 20px;
+}
+
+.tag-cloud a {
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 3px;
+  border-radius: 15px;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.tag-cloud a:hover {
+  background-color: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 根据标签使用频率设置不同颜色 */
+.tag-1 { background-color: #e0f2fe !important; }
+.tag-2 { background-color: #bae6fd !important; }
+.tag-3 { background-color: #7dd3fc !important; }
+.tag-4 { background-color: #38bdf8 !important; }
+.tag-5 { background-color: #0ea5e9 !important; color: white !important; }
 
 
 
