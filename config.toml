@@ -68,8 +68,10 @@ publishDir            = "public"					# 站点静态文件保存目录
     lineNos = true    # 显示行号
  [markup.goldmark]
     [markup.goldmark.renderer]
-    unsafe = true  # 允许 HTML 标签渲染
-  defaultMarkdownHandler = "goldmark"  # 确保是 goldmark
+      unsafe = true  # 允许 HTML 标签渲染
+      defaultMarkdownHandler = "goldmark"  # 确保是 goldmark
+    [markup.goldmark.extensions]
+      mermaid = true
 
 
 [taxonomies]
