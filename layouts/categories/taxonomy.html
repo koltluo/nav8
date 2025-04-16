@@ -16,11 +16,11 @@
 
 <!-- 分类云展示区 -->
 <div class="tag-cloud mb-4 text-center">
-    {{ range .Site.Taxonomies.categories }}
+    {{ range .Site.Taxonomies.categories.ByCount }}
         <a href="{{ .Page.Permalink }}" 
            class="category-{{ .Count }}"
            style="font-size: {{ add 0.8 (mul 0.2 .Count) }}em;">
-            {{ .Page.Title }} ({{ .Count }})
+            {{ .Page.Title }} ({{ .Count }})  <!-- 或者使用 {{ .Term }} 显示原始分类名 -->
         </a>
     {{ end }}
 </div>

@@ -15,12 +15,12 @@
 
 <!-- 标签云展示区 -->
 <div class="tag-cloud mb-4 text-center">
-    {{ range .Site.Taxonomies.tags }}
-        <a href="{{ .Page.Permalink }}" class="tag-{{ .Count }}" 
-           style="font-size: {{ add 0.8 (mul 0.2 .Count) }}em;">
-            {{ .Page.Title }} ({{ .Count }})
-        </a>
-    {{ end }}
+    {{ range .Site.Taxonomies.tags.ByCount }}
+    <a href="{{ .Page.Permalink }}" class="tag-{{ .Count }}" 
+       style="font-size: {{ add 0.8 (mul 0.2 .Count) }}em;">
+        {{ .Page.Title }} ({{ .Count }})  <!-- 或者使用 {{ .Term }} 显示原始标签名 -->
+    </a>
+{{ end }}
 </div>                        </div>
                     </div>
                 </div>
