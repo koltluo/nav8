@@ -12,19 +12,29 @@
                 <div class="col-md-9">  <!-- 将 col-md-9 改为 col-md-8，适当减小宽度 -->
                     <div class="card rounded shadow-sm mb-4">
                         <div class="card-body">
-                            <h1 class="card-title text-center mt-3">分类</h1>  <!-- 显示标签名称 -->
+                            <!-- 1. 显示当前分类页的标题 -->
+                            <h1 class="card-title text-center mt-3">分类: {{ .Title }}</h1> 
 
-<!-- 分类云展示区 -->
-<div class="tag-cloud mb-4 text-center">
-    {{ range .Site.Taxonomies.categories.ByCount }}
-        <a href="{{ .Page.Permalink }}" 
-           class="category-{{ .Count }}"
-           style="font-size: {{ add 0.8 (mul 0.2 .Count) }}em;">
-            {{ .Page.Title }} ({{ .Count }})  <!-- 或者使用 {{ .Term }} 显示原始分类名 -->
-        </a>
-    {{ end }}
-</div>
+                            <!-- 2. 列表属于当前分类的文章 -->
+                            <div class="content px-4">
+                                <ul class="list-unstyled"> <!-- 使用无样式列表可能更美观 -->
+                                    {{/* 使用分页器遍历当前分类下的文章 */}}
+                                    {{ $paginator := .Paginate .Pages }}
+                                    {{ range $paginator.Pages }}
+                                    <li class="mb-2">
+                                        <a href="{{ .Permalink }}">{{ .Title }}</a>
+                                        {{/* 可选：显示文章日期 */}}
+                                        <span class="text-muted ms-2">({{ .Date.Format "2006-01-02" }})</span>
+                                    </li>
+                                    {{ else }}
+                                    <li>该分类下暂无文章。</li>
+                                    {{ end }}
+                                </ul>
+                            </div>
 
+                            <!-- 3. 添加分页导航 (如果文章多的话) 
+                            {{ partial "pagination.html" . }} 
+                            -->
                         </div>
                     </div>
                 </div>
