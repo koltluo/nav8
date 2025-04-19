@@ -2,6 +2,7 @@
 
 - taxonomy: 常用推荐
   icon: far fa-star
+  moreLink: "/tools/"  #  添加更多链接的地址
   links: 
     - title: 赞助我们
       logo: "赏.png"
@@ -66,6 +67,7 @@
       description: 全球最受欢迎的收款和付款方式，跨国交易即时支付即时到账，安全又方便，75%的跨国卖家首选PayPal作为付款方式。
 - taxonomy: AI工具
   icon: fas fa-eye
+  moreLink: "/AI-tools/"  #  添加更多链接的地址
   links:
         - title: Amazon CodeWhisperer
           logo: "https://favicon.im/www.amazon.com"
@@ -117,6 +119,7 @@
           description: AI音频编辑和文字转语音
 - taxonomy: 跨境电商
   icon: fa fa-store
+  moreLink: "/Cross-border-e-commerce/"  #  添加更多链接的地址
   links: 
     - title: Amazon
       logo: "https://favicon.im/www.amazon.com"
@@ -180,6 +183,7 @@
       description: 阿里巴巴国际站  
 - taxonomy: 社交平台
   icon: fa fa-sms
+  moreLink: "/social-tools/"  #  添加更多链接的地址
   links: 
     - title: whatsapp
       logo: "https://favicon.im/whatsapp.com"
@@ -261,6 +265,7 @@
   icon: fas fa-tools fa-lg
   list:
     - term: 翻译工具
+      moreLink: "/translation-tools/"  #  添加更多链接的地址
       links:
         - title: 百度翻译
           logo: https://favicon.im/fanyi.baidu.com
@@ -311,6 +316,7 @@
           url: https://sight.youdao.com/
           description: 网易见外翻译。    
     - term: 收款工具
+      moreLink: "/payment-tools/"  #  添加更多链接的地址
       links:
         - title: Payoneer
           logo: https://favicon.im/www.payoneer.com.cn
@@ -366,6 +372,7 @@
           description: sezzle收款   
           
     - term: 关税查询
+      moreLink: "/Tariff-inquiry/"  #  添加更多链接的地址
       links:
         - title: 美国国际贸易关税
           logo: https://favicon.im/hts.usitc.gov
@@ -405,6 +412,7 @@
           description: 进出口商品税率  
    
     - term: 关务工具
+      moreLink: "/customs-tools/"  #  添加更多链接的地址
       links:
         - title: 中国电子口岸
           logo: https://favicon.im/www.chinaport.gov.cn
@@ -435,6 +443,7 @@
           url: https://www.track-trace.com/
           description: 国际国内快递查询 
     - term: HS编码
+      moreLink: "/HS-code/"  #  添加更多链接的地址
       links:
         - title: 新通关网查
           logo: https://favicon.im/hs.bianmachaxun.com
@@ -461,6 +470,7 @@
           url: http://www.transcustoms.cn/HScode/
           description: 商品hs编码 
     - term: 品牌查询
+      moreLink: "/Brand-query/"  #  添加更多链接的地址
       links:
         - title: 中国商标信息查询
           logo: https://favicon.im/wcjs.sbj.cnipa.gov.cn
@@ -511,6 +521,7 @@
           url: https://patentscope2.wipo.int/search/en/search.jsf
           description: WIPO    
     - term: 背景调查
+      moreLink: "/background-check/"  #  添加更多链接的地址
       links:
         - title: 美国OFAC制裁名单查询
           logo: https://favicon.im/sanctionssearch.ofac.treas.gov
@@ -557,6 +568,7 @@
           url: https://www.similarsites.com/
           description: 竞争对手网址查询  
     - term: 图片处理
+      moreLink: "/image-processing-website"  #  添加更多链接的地址
       links:
         - title: Canva（在线平面设计）
           logo: https://favicon.im/www.canva.com
@@ -619,6 +631,7 @@
           url: http://barnimages.com/
           description: BarnImages免费可商用无版权图片    
     - term: 办公工具
+      moreLink: "/Office-tool-website/"  #  添加更多链接的地址
       links:
         - title: 国际网盘
           logo: https://favicon.im/wetransfer.com
@@ -656,7 +669,8 @@
           logo: https://favicon.im/www.videosmaller.com
           url: http://www.videosmaller.com/
           description: 视频文件压缩 
-    - term: 实用查询 
+    - term: 实用查询
+      moreLink: "/Utility-Query/"  #  添加更多链接的地址
       links:
         - title: 查询全球国家信息
           logo: https://favicon.im/www.countrycode.org
@@ -699,6 +713,7 @@
   icon: fa fa-heart
   list: 
     - term: 英语学习
+      moreLink: "/English-learning-website/"  #  添加更多链接的地址
       links:
         - title: 可可英语
           url: https://www.kekenet.com/
@@ -755,6 +770,7 @@
           logo: https://favicon.im/www.mofcom.gov.cn
           description: 商务部   
     - term: 外贸论坛
+      moreLink: "/Foreign-Trade-Forum/"  #  添加更多链接的地址
       links: 
         - title: 福步外贸论坛
           logo: "https://favicon.im/fobshanghai.com"
@@ -839,6 +855,7 @@
   icon: fa fa-book
   list:
     - term: 欧洲黄页
+      moreLink: "/Global-Yellow-Pages/"  #  添加更多链接的地址
       links:
         - title: Gelbeseiten
           logo: https://favicon.im/www.gelbeseiten.de
@@ -917,6 +934,7 @@
           url: https://www.yalwa.de/
           description: Yalwa德国黄页   
     - term: 亚洲黄页
+      moreLink: "/Global-Yellow-Pages/"  #  添加更多链接的地址
       links:
         - title: YPJ日本黄页
           logo: https://favicon.im/ypj.com
@@ -975,6 +993,7 @@
           url: http://www.spyur.am/
           description: spyur(亚美尼亚)   
     - term: 美洲黄页
+      moreLink: "/Global-Yellow-Pages/"  #  添加更多链接的地址
       links:
         - title: 加拿大411
           logo: https://favicon.im/411.ca
@@ -1017,6 +1036,7 @@
           url: https://www.yellowpages.com/
           description: yellowpages美国黄页  
     - term: 大洋洲黄页
+      moreLink: "/Global-Yellow-Pages/"  #  添加更多链接的地址
       links:
         - title: 新西兰黄页
           logo: https://favicon.im/yellow.co.nz
@@ -1035,6 +1055,7 @@
           url: https://www.hotfrog.com.au/
           description: 热青蛙(hotfrog)   
     - term: 非洲黄页
+      moreLink: "/Global-Yellow-Pages/"  #  添加更多链接的地址
       links:
         - title: sayellow
           logo: https://favicon.im/www.sayellow.com
@@ -1060,6 +1081,7 @@
   icon: fa fa-mail-bulk
   list:
     - term: 欧洲B2B平台
+      moreLink: "/Global-B2B-platform/"  #  添加更多链接的地址
       links:
         - title: exapro
           logo: https://favicon.im/www.exapro.com
@@ -1115,6 +1137,7 @@
           description: Luxalia意大利B2B平台
         
     - term: 亚洲B2B平台
+      moreLink: "/Global-B2B-platform/"  #  添加更多链接的地址
       links:
         - title: m-osaka日本B2B平台
           logo: https://favicon.im/www.m-osaka.com
@@ -1329,6 +1352,7 @@
           url: https://b2bmap.com/
           description: b2bmap B2B平台   
     - term: 美洲B2B平台
+      moreLink: "/Global-B2B-platform/"  #  添加更多链接的地址
       links:
         - title: 加拿大foreign-trade
           logo: https://favicon.im/www.foreign-trade.com
@@ -1419,6 +1443,7 @@
           url: https://www.wexportar.com.ar/
           description: Wexportar阿根廷  
     - term: 大洋洲B2B平台
+      moreLink: "/Global-B2B-platform/"  #  添加更多链接的地址
       links:
         - title: 新西兰tradeboss
           logo: https://favicon.im/www.tradeboss.com
@@ -1437,6 +1462,7 @@
           url: https://australianmade.com.au/
           description: Australianmade  
     - term: 非洲B2B平台
+      moreLink: "/Global-B2B-platform/"  #  添加更多链接的地址
       links:
         - title: southafricab2b
           logo: https://favicon.im/www.southafricab2b.co.za
@@ -1470,6 +1496,7 @@
   icon: fas fa-robot fa-lg
   list:
     - term: 常用邮箱
+      moreLink: "/email-service/"  #  添加更多链接的地址
       links:
         - title: 谷歌邮箱
           logo: https://favicon.im/mail.google.com
@@ -1512,6 +1539,7 @@
           url: https://mail.sina.com/
           description: 新浪邮箱    
     - term: 临时邮箱
+      moreLink: "/email-service/"  #  添加更多链接的地址
       links:
         - title: 脆球邮箱
           logo: https://favicon.im/mail.cuiqiu.com
@@ -1543,6 +1571,7 @@
           description: 一次性临时邮箱
           
     - term: 短信接码
+      moreLink: "/SMS-code/"  #  添加更多链接的地址
       links:
         - title: 云短信
           logo: https://favicon.im/yunduanxin.net
@@ -1573,6 +1602,7 @@
           url: https://www.smspva.com/
           description: Smspva
     - term: 资料生成
+      moreLink: "/data-generation/"  #  添加更多链接的地址
       links:
         - title: 信用卡号码生成器
           logo: https://favicon.im/namso-gen.com
@@ -1599,6 +1629,7 @@
           url: http://www.haoweichi.com/
           description: 美国虚拟身份、地址、信用卡号码生成器  
     - term: IP代理
+      moreLink: "/network-tools/"  #  添加更多链接的地址
       links:
         - title: Bright Data
           logo: https://favicon.im/www.bright.cn
@@ -1625,6 +1656,7 @@
           url: https://www.miyaip.com/
           description: Miya IP 
     - term: 网络检测
+      moreLink: "/network-tools/"  #  添加更多链接的地址
       links:
         - title: IP洁净度检测
           logo: https://favicon.im/scamalytics.com
@@ -1651,6 +1683,7 @@
           url: https://browserleaks.com/
           description: BrowserLeaks 指纹检测 
     - term: 网络加速
+      moreLink: "/network-tools/"  #  添加更多链接的地址
       links:
         - title: TNTV2
           logo: https://favicon.im/tntv2.cyou
@@ -1673,6 +1706,7 @@
           url: https://quickq.io/
           description: Quickq
     - term: 谷歌插件
+      moreLink: "/selection-analysis/"  #  添加更多链接的地址
       links:
         - title: Fatkun
           logo: https://favicon.im/chrome.google.com
@@ -1703,6 +1737,7 @@
           url: https://chrome.google.com/webstore/detail/commerce-inspector/kefmekfmfacbdefimlancoccpocmgmpb
           description: 监测Shopify店铺的畅销产品，插件，新上产品   
     - term: SEO工具
+      moreLink: "/selection-analysis/"  #  添加更多链接的地址
       links:
         - title: 谷歌分析
           logo: https://favicon.im/analytics.google.com
@@ -1729,6 +1764,7 @@
           url: https://www.wordstream.com/keywords
           description: 免费关键字工具 ,发现并导出新的关键字和效果数据，帮助您在Google Ads中取得成功。 
     - term: 选品分析
+      moreLink: "/selection-analysis/"  #  添加更多链接的地址
       links:
         - title: 谷歌趋势
           logo: https://favicon.im/trends.google.com

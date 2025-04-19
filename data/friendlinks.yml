@@ -18,10 +18,6 @@
   avatar: "https://favicon.im/deepdhai.com"
   desc: "国内首屈一指的导航分类平台，收录国内外各类型网站供网友检索"
 
-- title: "终极导航"
-  url: "https://www.zjnav.com/"
-  avatar: "https://favicon.im/zjnav.com"
-  desc: "终极导航"
   
 - title: "爱AI工具库"
   url: "https://www.2ai.cn/"
@@ -63,7 +59,26 @@
   avatar: "https://favicon.im/zznl.cn"
   desc: "专业技术导航网站"
 
-- title: "睿导航网"
-  url: "https://www.ruii6.com"
-  avatar: "https://favicon.im/ruii6.com"
-  desc: "高品质的综合型网站导航，上网从这里开始！"
+
+- title: "Jay的资源库"
+  url: "https://www.lovejay.top"
+  avatar: "https://favicon.im/lovejay.top"
+  desc: "互联网资源集大成者"
+
+- title: "萌导航网"
+  url: "https://www.rrnav.cc"
+  avatar: "https://favicon.im/rrnav.cc"
+  desc: "以正义为名，为您照亮前方"
+
+- title: "等待中.."
+  url: "/friends/"
+  avatar: "https://favicon.im/nav8.top"
+  desc: "与优质网站合作，分享彼此资源，欢迎优秀网站与本站交换链接"
+- title: "等待中.."
+  url: "/friends/"
+  avatar: "https://favicon.im/nav8.top"
+  desc: "与优质网站合作，分享彼此资源，欢迎优秀网站与本站交换链接"
+- title: "等待中.."
+  url: "/friends/"
+  avatar: "https://favicon.im/nav8.top"
+  desc: "与优质网站合作，分享彼此资源，欢迎优秀网站与本站交换链接"

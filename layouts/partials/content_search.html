@@ -266,4 +266,37 @@
             </div>
         </div>
     </div>
+
+
+    <div class="container mt-5">            <!-- 广告容器 -->
+        <div class="row">  <!-- 使用 Bootstrap 的行 -->
+            {{ $ads := .Site.Data.ads }}
+            {{ range $ads }}
+                {{ if and .enabled }}  <!-- 仅显示 enabled 为 true 的广告 -->
+                    <div class="col-6 col-sm-6 col-md-4 col-xl-5a col-xxl-6a">  <!-- Bootstrap 的列，与首页相同 -->
+                        <div class="url-card">  <!-- 添加一个额外的类，方便后续自定义样式 -->
+                            <div class="url-body default">  <!-- 保持结构一致 -->
+                                <a href="{{ .link }}" target="_blank" class="card no-c mb-4" title="{{ .desc }}">
+                                    <div class="card-body">
+                                        <div class="url-content d-flex align-items-center">
+                                            <div class="url-img mr-2 d-flex align-items-center justify-content-center">
+                                                <img src="{{ .avatar | relURL }}" alt="{{ .title }}" class="lazy" onerror="javascript:this.src='{{ $.Site.Params.defaultLogo }}'">  <!-- 使用 .avatar  ,  添加 relURL, 添加title, 使用defaultLogo -->
+                                            </div>
+                                            <div class="url-info flex-fill">
+                                                <div class="text-sm overflowClip_1">
+                                                    <strong>{{ .title }}</strong>  <!-- 使用 .title -->
+                                                </div>
+                                                <p class="overflowClip_1 m-0 text-muted text-xs">{{ .desc }}</p>  <!-- 使用 .desc -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+    
 </div>

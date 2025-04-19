@@ -1,8 +1,6 @@
 ---
 title: 友链申请
 date: 2024-01-01  # 可以随意设置
-layout: friends  # 使用 page 布局，后面我们会创建自定义布局
-type: friends
 ---
 
 

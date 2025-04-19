@@ -10,12 +10,12 @@
                     {{ .term }}
                 </h4>
                 <div class="flex-fill"></div>
-                <a class='btn-move text-xs' href='{{ .moreLink }}'>more+</a>
+                <a class='btn-move text-xs' href='#'>more+</a>
             </div>
             <!--获取内容列表-->
             <div class="row">
-                {{ range first 10 .links }}    <!-- 使用 first 10 限制显示数量 -->
-            <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
+                {{ range .links }}
+                <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
                     <div class="url-body default">
 			<!--去除 Tooltip
                         <a href="{{ .url }}" target="_blank" data-id="" data-url="{{ .url }}" class="card no-c mb-4" title="{{ .title }}">
@@ -77,11 +77,11 @@
                     {{ .taxonomy }}
                 </h4>
                 <div class="flex-fill"></div>
-                <a class='btn-move text-xs' href='{{ .moreLink }}'>more+</a>
+                <a class='btn-move text-xs' href='#'>more+</a>
             </div>
             <!--获取内容列表-->
             <div class="row">
-                {{ range first 10 .links }}    <!-- 使用 first 10 限制显示数量 -->
+                {{ range .links }}
                 <div class="url-card col-6  col-sm-6 col-md-4 col-xl-5a col-xxl-6a">
                     <div class="url-body default">
 			<!--去除 Tooltip

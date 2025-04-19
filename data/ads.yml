@@ -1,0 +1,46 @@
+# data/ads.yml
+- id: header_ad  # 广告位唯一 ID
+  title: "赞助商广告"
+  desc: "了解更多关于我们的赞助商和他们提供的服务。"
+  link: "https://example.com/sponsor"
+  avatar: "/images/sponsor-logo.png"  # 广告图片
+  enabled: false  # 开启
+
+- id: header_ad  # 广告位唯一 ID
+  title: "赞助商广告"
+  desc: "了解更多关于我们的赞助商和他们提供的服务。"
+  link: "https://example.com/sponsor"
+  avatar: "/images/sponsor-logo.png"  # 广告图片
+  enabled: false  # 开启
+- id: header_ad  # 广告位唯一 ID
+  title: "赞助商广告"
+  desc: "了解更多关于我们的赞助商和他们提供的服务。"
+  link: "https://example.com/sponsor"
+  avatar: "/images/sponsor-logo.png"  # 广告图片
+  enabled: false  # 开启
+- id: header_ad  # 广告位唯一 ID
+  title: "赞助商广告"
+  desc: "了解更多关于我们的赞助商和他们提供的服务。"
+  link: "https://example.com/sponsor"
+  avatar: "/images/sponsor-logo.png"  # 广告图片
+  enabled: false  # 开启
+- id: header_ad  # 广告位唯一 ID
+  title: "赞助商广告"
+  desc: "了解更多关于我们的赞助商和他们提供的服务。"
+  link: "https://example.com/sponsor"
+  avatar: "/images/sponsor-logo.png"  # 广告图片
+  enabled: false  # 开启
+- id: header_ad  # 广告位唯一 ID
+  title: "赞助商广告"
+  desc: "了解更多关于我们的赞助商和他们提供的服务。"
+  link: "https://example.com/sponsor"
+  avatar: "/images/sponsor-logo.png"  # 广告图片
+  enabled: false  # 开启
+
+
+- id: product_ad
+  title: "推荐产品"
+  desc: "查看我们的最新产品，享受特别优惠！"
+  link: "https://example.com/product"
+  avatar: "/images/product-logo.png"  # 广告图片
+  enabled: false  # 关闭
