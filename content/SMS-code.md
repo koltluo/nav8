@@ -11,29 +11,80 @@ draft: false
 
 ### **国内接码平台**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **云短信** | [https://www.yunduanxin.net](https://www.yunduanxin.net/) | 提供中国大陆虚拟号码接收短信，支持验证码分类查看，需付费购买套餐。 |
-| **接码号** | [https://jiemahao.com](https://jiemahao.com/) | 可获取临时手机号用于注册，号码有效期10分钟，部分平台限制接收。 |
-| **在线短信接收** | [https://www.zusms.com](https://www.zusms.com/) | 免费接收全球20+国家短信，含中国大陆号码，但可用率不稳定。 |
+<div class="row"> 
+
+{{< card
+    title="云短信"
+    url="https://www.yunduanxin.net"
+    desc="提供中国大陆虚拟号码接收短信，支持验证码分类查看，需付费购买套餐。"
+    avatar="https://favicon.im/yunduanxin.net"
+>}}
+{{< card
+    title="接码号"
+    url="https://jiemahao.com"
+    desc="可获取临时手机号用于注册，号码有效期10分钟，部分平台限制接收。"
+    avatar="https://favicon.im/jiemahao.com"
+>}}
+{{< card
+    title="在线短信接收"
+    url="https://www.zusms.com"
+    desc="免费接收全球20+国家短信，含中国大陆号码，但可用率不稳定。"
+    avatar="https://favicon.im/zusms.com"
+>}}
+
+</div>
 
 
 ### **国际接码平台**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **SMS-Activate** | [https://sms-activate.org](https://sms-activate.org/) | 全球最大接码平台，覆盖200+国家号码，支持TG/Gmail等热门服务激活。 |
-| **Receive-SMS** | [https://receive-sms.com](https://receive-sms.com/) | 免费接收美国/英国/加拿大号码短信，实时显示内容，无需注册。 |
-| **5Sim** | [https://5sim.net](https://5sim.net/) | 按条付费的接码服务，支持中国香港/印尼/巴西等号码，可自动提取验证码。 |
-| **Temp-Number** | [https://temp-number.org](https://temp-number.org/) | 提供临时号码接收短信和语音验证码，含俄罗斯/乌克兰等小众国家选项。 |
+<div class="row"> 
+
+{{< card
+    title="SMS-Activate"
+    url="https://sms-activate.org"
+    desc="全球最大接码平台，覆盖200+国家号码，支持TG/Gmail等热门服务激活。"
+    avatar="https://favicon.im/sms-activate.org"
+>}}
+{{< card
+    title="Receive-SMS"
+    url="https://receive-sms.com"
+    desc="免费接收美国/英国/加拿大号码短信，实时显示内容，无需注册。"
+    avatar="https://favicon.im/receive-sms.com"
+>}}
+{{< card
+    title="5Sim"
+    url="https://5sim.net"
+    desc="按条付费的接码服务，支持中国香港/印尼/巴西等号码，可自动提取验证码。"
+    avatar="https://favicon.im/5sim.net"
+>}}
+{{< card
+    title="Temp-Number"
+    url="https://temp-number.org"
+    desc="提供临时号码接收短信和语音验证码，含俄罗斯/乌克兰等小众国家选项。"
+    avatar="https://favicon.im/temp-number.org"
+>}}
+
+</div>
 
 
 ### **特殊用途平台**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **Dingtone** | [https://www.dingtone.me](https://www.dingtone.me/) | 通过虚拟电话号码发短信/打电话，需下载APP，部分功能需订阅。 |
-| **Google Voice** | [https://voice.google.com](https://voice.google.com/) | 谷歌提供的美国虚拟号码，可长期持有，但需美国IP和账号绑定。 |
+<div class="row"> 
+
+{{< card
+    title="Dingtone"
+    url="https://www.dingtone.me"
+    desc="通过虚拟电话号码发短信/打电话，需下载APP，部分功能需订阅。"
+    avatar="https://favicon.im/dingtone.me"
+>}}
+{{< card
+    title="Google Voice"
+    url="https://voice.google.com"
+    desc="谷歌提供的美国虚拟号码，可长期持有，但需美国IP和账号绑定。"
+    avatar="https://favicon.im/google.com"
+>}}
+
+</div>
 
 
 ### **风险提示**

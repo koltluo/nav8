@@ -14,6 +14,8 @@
       url: "mailto:info@nav8.top"
     - name: 友链申请
       url: "/friends/"
+    - name: 投稿邀请
+      url: "/submission/"
       
 - item: 博客
   icon: fa fa-book

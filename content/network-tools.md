@@ -11,60 +11,154 @@ draft: false
 
 ### **基础检测**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| [**ip.cn**](http://ip.cn/) | [https://ip.cn](https://ip.cn/) | 国内极简IP查询工具，显示公网IP及归属地，支持IPv6检测 |
-| **IP138** | [https://www.ip138.com](https://www.ip138.com/) | 提供IP定位/Whois查询/端口扫描，附带代理服务器检测功能 |
-| **WhatIsMyIPAddress** | [https://whatismyipaddress.com](https://whatismyipaddress.com/) | 国际常用IP检测站，显示地理位置/ISP/黑名单状态，含代理泄露测试 |
+<div class="row"> 
+
+{{< card
+    title="ip.cn"
+    url="https://ip.cn"
+    desc="国内极简IP查询工具，显示公网IP及归属地，支持IPv6检测"
+    avatar="https://favicon.im/ip.cn"
+>}}
+{{< card
+    title="IP138"
+    url="https://www.ip138.com"
+    desc="提供IP定位/Whois查询/端口扫描，附带代理服务器检测功能"
+    avatar="https://favicon.im/ip138.com"
+>}}
+{{< card
+    title="WhatIsMyIPAddress"
+    url="https://whatismyipaddress.com"
+    desc="国际常用IP检测站，显示地理位置/ISP/黑名单状态，含代理泄露测试"
+    avatar="https://favicon.im/whatismyipaddress.com"
+>}}
+
+</div>
 
 ### **高级分析**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| [**IPinfo.io**](http://ipinfo.io/) | [https://ipinfo.io](https://ipinfo.io/) | 企业级IP数据分析API，提供ASN/公司归属/威胁情报等深度信息 |
-| **DNSLeakTest** | [https://dnsleaktest.com](https://dnsleaktest.com/) | 检测DNS泄漏问题，验证VPN/代理是否真正隐藏网络轨迹 |
+<div class="row"> 
+
+{{< card
+    title="IPinfo.io"
+    url="https://ipinfo.io"
+    desc="企业级IP数据分析API，提供ASN/公司归属/威胁情报等深度信息"
+    avatar="https://favicon.im/ipinfo.io"
+>}}
+{{< card
+    title="DNSLeakTest"
+    url="https://dnsleaktest.com"
+    desc="检测DNS泄漏问题，验证VPN/代理是否真正隐藏网络轨迹"
+    avatar="https://favicon.im/dnsleaktest.com"
+>}}
+
+</div>
 
 
 ## **网络加速工具**
 
 ### **游戏加速**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **网易UU加速器** | [https://uu.163.com](https://uu.163.com/) | 国内合规游戏加速器，支持PS/Xbox/Steam等平台，降低延迟至30ms内 |
-| **WTFast** | [https://www.wtfast.com](https://www.wtfast.com/) | 国际游戏专用VPN，智能路由优化，支持《英雄联盟》《原神》等热门游戏 |
+<div class="row"> 
+
+{{< card
+    title="网易UU加速器"
+    url="https://uu.163.com"
+    desc="国内合规游戏加速器，支持PS/Xbox/Steam等平台，降低延迟至30ms内"
+    avatar="https://favicon.im/uu.163.com"
+>}}
+{{< card
+    title="WTFast"
+    url="https://www.wtfast.com"
+    desc="国际游戏专用VPN，智能路由优化，支持《英雄联盟》《原神》等热门游戏"
+    avatar="https://favicon.im/wtfast.com"
+>}}
+
+</div>
 
 ### **全局加速**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **Cloudflare WARP** | [https://1.1.1.1](https://1.1.1.1/) | 免费全局网络加速工具，加密DNS并优化路由，改善跨境访问速度 |
-| **Speedify** | [https://speedify.com](https://speedify.com/) | 多链路聚合加速（WiFi+蜂窝数据），实时流量加密，防止网络中断 |
+<div class="row"> 
+
+{{< card
+    title="Cloudflare WARP"
+    url="https://1.1.1.1"
+    desc="免费全局网络加速工具，加密DNS并优化路由，改善跨境访问速度"
+    avatar="https://favicon.im/1.1.1.1"
+>}}
+{{< card
+    title="Speedify"
+    url="https://speedify.com"
+    desc="多链路聚合加速（WiFi+蜂窝数据），实时流量加密，防止网络中断"
+    avatar="https://favicon.im/speedify.com"
+>}}
+
+</div>
 
 
 ## **网络代理工具**
 
 ### **国内合规服务**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **GreenVPN** | [https://www.greenvpn.cn](https://www.greenvpn.cn/) | 公安部备案的商用VPN，提供企业级加密通道，需实名认证使用 |
-| **快连VPN** | [https://www.letsvpn.net](https://www.letsvpn.net/) | 国内可用的付费代理工具，支持多设备连接，侧重访问学术资源 |
+<div class="row"> 
+
+{{< card
+    title="GreenVPN"
+    url="https://www.greenvpn.cn"
+    desc="公安部备案的商用VPN，提供企业级加密通道，需实名认证使用"
+    avatar="https://favicon.im/greenvpn.cn"
+>}}
+{{< card
+    title="快连VPN"
+    url="https://www.letsvpn.net"
+    desc="国内可用的付费代理工具，支持多设备连接，侧重访问学术资源"
+    avatar="https://favicon.im/letsvpn.net"
+>}}
+
+</div>
 
 ### **国际主流服务**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **NordVPN** | [https://nordvpn.com](https://nordvpn.com/) | 巴拿马注册的隐私型VPN，5500+服务器，支持双跳加密和暗网监测 |
-| **Proton VPN** | [https://protonvpn.com](https://protonvpn.com/) | 瑞士安全公司开发，免费版不限时长，高级版支持Tor over VPN |
-| **Shadowsocks** | [https://shadowsocks.org](https://shadowsocks.org/) | 开源SOCKS5代理协议，需自建服务器，抗GFW检测能力强 |
+<div class="row"> 
+
+{{< card
+    title="NordVPN"
+    url="https://nordvpn.com"
+    desc="巴拿马注册的隐私型VPN，5500+服务器，支持双跳加密和暗网监测"
+    avatar="https://favicon.im/nordvpn.com"
+>}}
+{{< card
+    title="Proton VPN"
+    url="https://protonvpn.com"
+    desc="瑞士安全公司开发，免费版不限时长，高级版支持Tor over VPN"
+    avatar="https://favicon.im/protonvpn.com"
+>}}
+{{< card
+    title="Shadowsocks"
+    url="https://shadowsocks.org"
+    desc="开源SOCKS5代理协议，需自建服务器，抗GFW检测能力强"
+    avatar="https://favicon.im/shadowsocks.org"
+>}}
+
+</div>
 
 ### **浏览器扩展**
 
-| 名称 | 网址 | 简介 |
-| --- | --- | --- |
-| **Hoxx VPN** | [https://hoxx.com](https://hoxx.com/) | 免费浏览器代理扩展，提供50+国家节点，限制每月500MB流量 |
-| **TouchVPN** | [https://www.touchvpn.net](https://www.touchvpn.net/) | 一键式Chrome/Firefox插件，无日志政策，适合临时访问外网 |
+<div class="row"> 
+
+{{< card
+    title="Hoxx VPN"
+    url="https://hoxx.com"
+    desc="免费浏览器代理扩展，提供50+国家节点，限制每月500MB流量"
+    avatar="https://favicon.im/hoxx.com"
+>}}
+{{< card
+    title="TouchVPN"
+    url="https://www.touchvpn.net"
+    desc="一键式Chrome/Firefox插件，无日志政策，适合临时访问外网"
+    avatar="https://favicon.im/touchvpn.net"
+>}}
+
+</div>
 
 
 ### **技术架构对比**
