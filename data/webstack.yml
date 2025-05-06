@@ -129,34 +129,38 @@
       logo: "https://favicon.im/www.ebay.com"
       url: http://www.ebay.com/
       description: eBay
+    - title: Shein
+      logo: "https://favicon.im/www.shein.com"
+      url: https://sovrn.co/ljsf81h
+      description: Shein 是一家快时尚跨境电商公司,经营范围包括女装、男装、童装等服饰全品类，以及珠宝、化妆品、鞋、家居百货、电子产品等产品线。业务覆盖全球 150 多个国家和地区，主要面对欧美和中东等消费市场。
     - title: Wish
       logo: "https://favicon.im/www.wish.com"
-      url: http://www.wish.com/
-      description: Wish
+      url: https://sovrn.co/1bu677z
+      description: Wish 是一个成立于 2011 年的跨境电商平台，由来自谷歌和雅虎的工程师 Peter Szulczewski 和 Danny Zhang 创立，总部位于美国硅谷，中国总部在上海静安区 CBD。Wish 主要面向欧美市场，致力于为全球消费者提供高性价比的商品。
     - title: Aliexpress
       logo: "https://favicon.im/www.aliexpress.com"
       url: http://www.aliexpress.com/
       description: Aliexpress
     - title: DHgate(敦煌网)
       logo: "https://favicon.im/www.dhgate.com"
-      url: http://www.dhgate.com/
-      description: DHgate(敦煌网)
+      url: https://sovrn.co/igz877m
+      description: DHgate(敦煌网)是由王树彤于 2004 年创立的 B2B 跨境电商在线交易服务平台，也是中国首个为中小企业提供 B2B 网上交易的网站,敦煌网已拥有 254 万以上累计注册供应商，年均在线产品数量超过 3400 万，累计注册买家超过 5960 万，覆盖全球 225 个国家及地区
     - title: Tictail(欧洲)
       logo: "https://favicon.im/tictail.com"
       url: http://tictail.com/
       description: Tictail(欧洲)
     - title: Lazada(东南亚)
       logo: "https://favicon.im/www.lazada.com"
-      url: http://www.lazada.com/?setLanguage=zh
-      description: Lazada(东南亚)
+      url: https://sovrn.co/1j1434a
+      description: Lazada(东南亚)主要服务印度尼西亚、马来西亚、泰国、越南、菲律宾、新加坡等东南亚国家的消费者，提供包括电子产品、时尚、美妆、家居用品等丰富多样的商品种类。
     - title: LITH(兰亭集势)
       logo: "https://favicon.im/www.lightinthebox.com"
       url: http://www.lightinthebox.com/
       description: LITH(兰亭集势) 
     - title: Linio(南美)
       logo: "https://favicon.im/www.linio.com"
-      url: http://www.linio.com/
-      description: Linio(南美)
+      url: https://sovrn.co/c7u897q
+      description: Linio 成立于 2012 年，总部位于墨西哥，是拉丁美洲最大的 B2C 电商平台之一。由德国孵化器公司 Rocket Internet 投资，目前已在拉美地区多个国家开展业务，包括墨西哥、哥伦比亚、秘鲁、智利等。Linio 拥有超过 100 万个注册商家和 500 万注册用户。平台拥有 600 多万社交 “粉丝”，曾获得 2018 年最具创新性 App 称号，在拉美地区电商市场中占据重要地位。
     - title: Qoo10(亚洲)
       logo: "https://favicon.im/www.qoo10.sg"
       url: http://www.qoo10.sg/
@@ -179,8 +183,8 @@
       description: ioffer(全球)
     - title: 阿里巴巴国际站
       logo: "https://favicon.im/www.alibaba.com"
-      url: http://www.alibaba.com/
-      description: 阿里巴巴国际站  
+      url: https://sovrn.co/1b4yyqm
+      description: 阿里巴巴国际站是全球最大的 B2B 跨境电商平台，服务超过 2600 万活跃企业买家，覆盖 200 余个国家和地区。持续位居Alexa.com国际贸易类、电子商务类、贸易市场类、进出口贸易类网站排名全球第一，连续 8 次被美国《福布斯》杂志评为 “全球最佳 B2B 网站”，是全球企业拓展跨境贸易蓝海的首选在线平台。  
 - taxonomy: 社交平台
   icon: fa fa-sms
   moreLink: "/social-tools/"  #  添加更多链接的地址
