@@ -322,18 +322,26 @@
     - term: 收款工具
       moreLink: "/payment-tools/"  #  添加更多链接的地址
       links:
+        - title: WorldFrist
+          logo: https://favicon.im/www.worldfirst.com
+          url: https://sovrn.co/06urikb
+          description: 覆盖范围广，在全球设有 32 个办事处，服务于 200 多个地区的数百万客户，直连 130 多个热门电商平台，支持 20 多种常用币种收款，最快 1 分钟即可开户，1 分钟付款到账，周末和节假日也可提款
+        - title: airwallex
+          logo: https://favicon.im/www.airwallex.com
+          url: https://sovrn.co/lw72p17
+          description: airwallex空中云汇的业务已覆盖 130 多个国家，每年处理的全球交易总额超过 1000 亿美元，在全球支付领域占据重要地位，成为众多企业进行跨境业务时的首选支付平台之一。 
+        - title: sezzle
+          logo: https://favicon.im/sezzle.com
+          url: https://sovrn.co/1hbthao
+          description: sezzle收款，主要为在线零售商和消费者提供服务。对于商家来说，通过与 Sezzle 合作，能为顾客提供更灵活的支付方式，从而增加销售额和竞争优势；对于消费者而言，能够实现无息分期付款计划，缓解支付压力，尤其适合购买多件商品或进行大额消费时使用。   
         - title: Payoneer
           logo: https://favicon.im/www.payoneer.com.cn
           url: https://www.payoneer.com.cn/
           description: 派安盈，币种多，虚拟境外账户
         - title: Paypal
           logo: https://favicon.im/www.paypal.com
-          url: https://www.paypal.com/
-          description: 龙头老大，费率最高，4.4%+$0.3 注意避坑
-        - title: WorldFrist
-          logo: https://favicon.im/www.worldfirst.com.cn
-          url: https://www.worldfirst.com.cn/
-          description: 万里汇，虚拟境外账户，提现用
+          url: https://sovrn.co/124tcx0
+          description: PayPal 是全球领先的在线支付平台之一，在国际支付领域占据重要地位。截至 2022 年，PayPal 拥有超过 4.29 亿活跃账户，处理的交易金额庞大，业务覆盖 200 多个国家和地区。它与众多金融机构、电商平台和商家建立了合作关系，成为全球跨境电商和在线支付的重要基础设施之一。
         - title: 连连支付
           logo: https://favicon.im/global.lianlianpay.com
           url: https://global.lianlianpay.com/
@@ -358,10 +366,6 @@
           logo: https://favicon.im/www.2checkout.com
           url: https://www.2checkout.com/
           description: 2checkout收款 
-        - title: airwallex
-          logo: https://favicon.im/www.airwallex.com
-          url: https://www.airwallex.com/
-          description: airwallex收款 
         - title: 钱海
           logo: https://favicon.im/www.oceanpayment.com.cn
           url: https://www.oceanpayment.com.cn/
@@ -370,10 +374,6 @@
           logo: https://favicon.im/www.asiabill.com
           url: https://www.asiabill.com/
           description: asiabill收款
-        - title: sezzle
-          logo: https://favicon.im/sezzle.com
-          url: https://sezzle.com/
-          description: sezzle收款   
           
     - term: 关税查询
       moreLink: "/Tariff-inquiry/"  #  添加更多链接的地址
@@ -576,8 +576,8 @@
       links:
         - title: Canva（在线平面设计）
           logo: https://favicon.im/www.canva.com
-          url: https://www.canva.com/
-          description: Canva（在线平面设计）
+          url: https://sovrn.co/jxzmkq9
+          description: Canva（在线平面设计）素材多样，拥有 1 亿多种设计元素，包括图片、视频、音频、字体、贴纸动图和插画等，且与华盖（Getty）、蒙纳字体（Monotype）、视觉中国、汉仪字库等内容平台达成战略合作，整合全球优质版权内容资源。AI 功能强大，有 AI 写作、AI 修图、AI 生图等功能，能帮助用户快速生成文案和视觉内容。
         - title: 创客贴（在线图片编辑）
           logo: https://favicon.im/www.chuangkit.com
           url: https://www.chuangkit.com/
