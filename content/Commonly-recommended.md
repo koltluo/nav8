@@ -9,7 +9,7 @@ draft: false
 
 {{< card
     title="阿里巴巴"
-    url="https://www.alibaba.com/"
+    url="https://sovrn.co/1b4yyqm"
     desc="阿里巴巴国际站，客户多，费用高"
     avatar="https://favicon.im/www.alibaba.com"
 >}}
@@ -21,13 +21,13 @@ draft: false
 >}}
 {{< card
     title="amazon"
-    url="https://www.amazon.com"
+    url="https://sovrn.co/nutetc6"
     desc="美国最大的购物网站，也是地球上最大的网上购物，购买图书、杂志、音乐、DVD、视频、电子、电脑、软件、服装和配件、鞋子、珠宝、工具和五金、家居用品、家具、体育用品、美容和个人护理、宽带和dsl、美食及其它任何东西。"
     avatar="https://favicon.im/www.amazon.com"
 >}}
 {{< card
     title="eBay"
-    url="https://www.ebay.com"
+    url="https://sovrn.co/s6ks5mb"
     desc="eBay美国官网，你可以在eBay购买和出售电子产品、汽车、时尚服装、收藏品、体育用品、数码相机、婴儿用品、优惠券和其它一切。"
     avatar="https://favicon.im/www.ebay.com"
 >}}
