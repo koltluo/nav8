@@ -10,6 +10,11 @@ publishDir            = "public"					# 站点静态文件保存目录
 [pagination]       # <--- 添加这个配置块
   pagerSize = 12   # <--- 使用 pagerSize 并设置相同的值
 
+[taxonomies]
+   category = "categories"
+   tag = "tags"
+
+
 
 [params]
     author        = "外贸驿站"
@@ -76,9 +81,6 @@ publishDir            = "public"					# 站点静态文件保存目录
       mermaid = true
 
 
-[taxonomies]
-  category = "categories"
-  tag = "tags"
 
 
 
