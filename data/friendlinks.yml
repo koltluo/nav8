@@ -49,21 +49,21 @@
   avatar: "https://favicon.im/wznav.com"
   desc: "汇聚优质资源、网站，畅享精彩网络"
 
-- title: "卡农导航"
-  url: "https://www.kanodh.com"
-  avatar: "https://favicon.im/kanodh.com"
-  desc: "影视导航与网址导航平台 | 快捷访问影视资源与网站"
+- title: "ICO生成器"
+  url: "https://ico.nav8.top"
+  avatar: "https://favicon.im/ico.nav8.top"
+  desc: "ico图标在线生成器，支持多种格式转换，快速生成网站图标。"
 
-- title: "星兔网址导航"
-  url: "https://dh.centent.net.cn"
-  avatar: "https://favicon.im/dh.centent.net.cn"
-  desc: "星兔网址导航是一个聚合了多种网址的导航网站，其中包含了常用工具，AI工具以及很多的实用工具，在影视动漫，多媒体，游戏等领域也提供了多款不同的软件供用户根据自己的喜好选择使用，同时还提供了多种搜索引擎，用户可以通过关键词搜索到自己想要的内容，从这里出发，可以去往互联网生态的每个地方！"
+- title: "电缆选型计算器"
+  url: "https://cable-calculator.nav8.top/"
+  avatar: "https://favicon.im/cable-calculator.nav8.top"
+  desc: "电缆选型计算器是免费的在线电缆选型计算器，符合NEC 2023和IEC 60364标准。计算适当的电缆截面积、载流量、铜/铝电缆的电压降、电机电路等。包括AWG到mm²的转换功能。快速计算铜缆和铝缆的正确截面积，确保安全载流量并满足电压降要求。适用于电气工程设计、施工和维护。"
 
 
-- title: "自动秒收录"
-  url: "http://www.wxhao.cn"
-  avatar: "https://favicon.im/wxhao.cn"
-  desc: "自动秒收录"
+- title: "封面制作"
+  url: "https://fm.nav8.top"
+  avatar: "https://favicon.im/fm.nav8.top"
+  desc: "免费在线封面制作工具，提供多种模板和设计元素，帮助用户快速创建专业的封面图片。"
 
 - title: "等待中.."
   url: "/friends/"
